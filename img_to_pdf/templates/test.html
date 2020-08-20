@@ -10,12 +10,13 @@
 {% block body %}
 <h1 class="heading">Image To PDF</h1>
 <img class = 'img1' src="{% static 'img_to_pdf.png' %}"/><br>
+<script src="{% static 'update.js' %}"></script>
 <form method="post" action="simple_upload" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="file-drop-area">
       <span class="fake-btn">Choose files</span>
-      <span class="file-msg">or drag and drop files here</span>
-      <input name='myfile' class="file-input" type="file" multiple required>
+      <span class="file-msg" id="change">or drag and drop files here</span>
+      <input name='myfile' class="file-input" type="file" multiple required onclick="update_file()">
     </div><br><br>
     <div>
         <input class="btn text" type="submit">
