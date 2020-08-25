@@ -1,9 +1,6 @@
 # Image_To_PDF  
 A site made with Django in python to convert image to pdf  
   
-## Hosted site  
-https://pypranav.pythonanywhere.com/  
-  
 ## Instalation  
 Use git clone to install it on local machine.
 ```bash
